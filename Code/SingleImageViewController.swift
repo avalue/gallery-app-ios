@@ -24,6 +24,10 @@ class SingleImageViewController: UIPageViewController, UIPageViewControllerDataS
     var initialIndex = 0
     weak var singleImageDelegate: SingleImageViewControllerDelegate?
 
+    func activity(entry: CDAPersistedEntry) -> SPLWebActivity {
+        return SPLWebActivity(URL: NSURL(string: String(format: "https://app.contentful.com/spaces/%@/entries/%@", NSUserDefaults.standardUserDefaults().stringForKey(AppDelegate.SpaceKey)!, entry.identifier)))
+    }
+
     func updateCurrentIndex(index: Int) {
         if index < 0 || index > images.count {
             return
@@ -52,9 +56,11 @@ class SingleImageViewController: UIPageViewController, UIPageViewControllerDataS
         vc.view.tag = index
 
         if (index == 0) {
+            vc.activity = activity(gallery!)
             vc.captionLabel.text = gallery?.title
             vc.creditsLabel.text = gallery?.galleryDescription
         } else {
+            vc.activity = activity(images[index - 1])
             vc.captionLabel.text = images[index - 1].imageCaption
             vc.creditsLabel.text = images[index - 1].imageCredits
         }

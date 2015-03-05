@@ -11,6 +11,7 @@ import UIKit
 let metaInformationHeight = CGFloat(100.0)
 
 class ImageDetailsViewController: UIViewController, UIScrollViewDelegate {
+    var activity: SPLWebActivity? = nil
     let captionLabel = UILabel(frame: CGRectZero)
     let creditsLabel = UILabel(frame: CGRectZero)
     let imageView = UIImageView(frame: CGRectZero)
@@ -170,6 +171,12 @@ class ImageDetailsViewController: UIViewController, UIScrollViewDelegate {
         computeFrames()
         defaultZoom()
         updateNavigationBar(true)
+    }
+
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+
+        activity?.invalidate()
     }
 
     // MARK: Actions

@@ -43,6 +43,7 @@ PODS:
   - KVOController (1.0.3)
   - LatoFont (1.0.0)
   - SOZOChromoplast (0.0.2)
+  - SPLUserActivity (0.1.0)
   - TSMiniWebBrowser@dblock (1.1)
   - ZoomInteractiveTransition (0.2.1)
 
@@ -54,6 +55,7 @@ DEPENDENCIES:
   - FBSnapshotTestCase
   - KVOController
   - SOZOChromoplast
+  - SPLUserActivity
   - ZoomInteractiveTransition (from `git@github.com:neonichu/ZoomInteractiveTransition.git`, branch `reset-alpha-after-animation`)
 
 EXTERNAL SOURCES:
@@ -81,6 +83,7 @@ SPEC CHECKSUMS:
   KVOController: b1139ef1fc373b6757e4b69493fedd7b56eb1272
   LatoFont: 325a86578945d04cce8039deaf163229c63e2258
   SOZOChromoplast: 69a8a4b8f261680fe7a1a2562c2ec845237e1c6e
+  SPLUserActivity: fbf04c189a0dd95e759cd8abeb28c73c5fbb955d
   TSMiniWebBrowser@dblock: 4e73ee955fcf2e9f5d98f7a17460454ac059bc37
   ZoomInteractiveTransition: ea0e8a96103ed49ef9fc7c290367a9df1cd31cb7
 
