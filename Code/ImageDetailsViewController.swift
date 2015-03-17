@@ -6,13 +6,14 @@
 //  Copyright (c) 2015 Contentful GmbH. All rights reserved.
 //
 
+import Concorde
 import UIKit
 
 let metaInformationHeight = CGFloat(100.0)
 
 class ImageDetailsViewController: UIViewController, UIScrollViewDelegate {
     var chromoplast: SOZOChromoplast?
-    let imageView = UIImageView(frame: CGRectZero)
+    let imageView = CCBufferedImageView(frame: CGRectZero)
     var kvoController: FBKVOController?
     let metaInformationView = UITextView(frame: CGRectZero)
     weak var pageViewController: UIPageViewController?

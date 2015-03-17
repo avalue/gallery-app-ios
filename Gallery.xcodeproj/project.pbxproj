@@ -22,6 +22,7 @@
 		A13B63E81A822EB700EF5EED /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13B63E71A822EB700EF5EED /* Author.swift */; };
 		A13B63EC1A82518E00EF5EED /* Hack.c in Sources */ = {isa = PBXBuildFile; fileRef = A13B63EA1A82518E00EF5EED /* Hack.c */; };
 		A18A5BCA1AA9E8DE00486BF0 /* gallery-app-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A18A5BC91AA9E8DE00486BF0 /* gallery-app-icon.png */; };
+		A18BD3721AB7C95600C9CC65 /* CCBufferedImageView+Contentful.swift in Sources */ = {isa = PBXBuildFile; fileRef = A18BD3711AB7C95600C9CC65 /* CCBufferedImageView+Contentful.swift */; };
 		A1C2BDD51AB71079002696BA /* Concorde.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C2BDCE1AB71061002696BA /* Concorde.framework */; };
 		A1C2BDD61AB71079002696BA /* Concorde.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1C2BDCE1AB71061002696BA /* Concorde.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A1C332351A924553008EC0B7 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C332341A924553008EC0B7 /* ImageCell.swift */; };
@@ -118,6 +119,7 @@
 		A13B63E91A824F4100EF5EED /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
 		A13B63EA1A82518E00EF5EED /* Hack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Hack.c; sourceTree = "<group>"; };
 		A18A5BC91AA9E8DE00486BF0 /* gallery-app-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gallery-app-icon.png"; sourceTree = "<group>"; };
+		A18BD3711AB7C95600C9CC65 /* CCBufferedImageView+Contentful.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CCBufferedImageView+Contentful.swift"; path = "vendor/Concorde/Code/CCBufferedImageView+Contentful.swift"; sourceTree = SOURCE_ROOT; };
 		A1C2BDC71AB71060002696BA /* Concorde.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Concorde.xcodeproj; path = vendor/Concorde/Concorde.xcodeproj; sourceTree = "<group>"; };
 		A1C332341A924553008EC0B7 /* ImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 		A1C332371A924F40008EC0B7 /* StoryboardIdentifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardIdentifiers.swift; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 			children = (
 				A1C332361A924F35008EC0B7 /* Generated */,
 				A1D156DC1A822BF000250215 /* Model */,
+				A18BD36E1AB7C92E00C9CC65 /* Vendored */,
 				A1C332391A925A3F008EC0B7 /* AnimatedFlowLayout.swift */,
 				A127574C1A81091400A0CA79 /* AppDelegate.swift */,
 				A1D156DA1A822BC200250215 /* ContentfulDataManager.swift */,
@@ -225,6 +228,14 @@
 				A12757501A81091400A0CA79 /* Main.storyboard */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		A18BD36E1AB7C92E00C9CC65 /* Vendored */ = {
+			isa = PBXGroup;
+			children = (
+				A18BD3711AB7C95600C9CC65 /* CCBufferedImageView+Contentful.swift */,
+			);
+			name = Vendored;
 			sourceTree = "<group>";
 		};
 		A1C2BDC81AB71060002696BA /* Products */ = {
@@ -498,6 +509,7 @@
 				A13B63DE1A822E8F00EF5EED /* Gallery.xcdatamodeld in Sources */,
 				A1C332351A924553008EC0B7 /* ImageCell.swift in Sources */,
 				A1CEEE421AA608B3000AA8E6 /* ImageDetailsViewController.swift in Sources */,
+				A18BD3721AB7C95600C9CC65 /* CCBufferedImageView+Contentful.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

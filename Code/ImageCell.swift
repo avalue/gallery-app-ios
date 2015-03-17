@@ -6,6 +6,7 @@
 //  Copyright (c) 2015 Contentful GmbH. All rights reserved.
 //
 
+import Concorde
 import UIKit
 
 extension CGSize {
@@ -20,7 +21,7 @@ class ImageCell : UICollectionViewCell {
     let shadowView: UIView
 
     override init(frame: CGRect) {
-        imageView = UIImageView(frame: frame)
+        imageView = CCBufferedImageView(frame: frame)
         imageView.alpha = 0.9
         imageView.autoresizingMask = .FlexibleWidth | .FlexibleHeight
         imageView.clipsToBounds = true

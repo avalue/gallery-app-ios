@@ -6,10 +6,11 @@
 //  Copyright (c) 2015 Contentful GmbH. All rights reserved.
 //
 
+import Concorde
 import UIKit
 
 class GalleryHeaderView: UICollectionReusableView {
-    let backgroundImageView = UIImageView()
+    let backgroundImageView = CCBufferedImageView(frame: CGRectZero)
     let textLabel = UILabel()
 
     override init(frame: CGRect) {
