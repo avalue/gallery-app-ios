@@ -1,0 +1,3 @@
+[submodule "vendor/Concorde"]
+	path = vendor/Concorde
+	url = git@github.com:contentful-labs/Concorde.git

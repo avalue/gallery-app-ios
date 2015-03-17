@@ -17,7 +17,7 @@ target 'Gallery' do
 #use_frameworks!
 
 pod 'Bypass'
-pod 'ContentfulDeliveryAPI', :head
+pod 'ContentfulDeliveryAPI', '>= 1.6.0'
 pod 'ContentfulDialogs'
 pod 'ContentfulPersistence'
 pod 'ContentfulStyle', :head
